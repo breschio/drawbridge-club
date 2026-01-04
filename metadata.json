@@ -1,0 +1,5 @@
+{
+  "name": "Drawbridge Website",
+  "description": "A minimal, clean landing page for the Drawbridge Chrome extension, featuring dark and light modes according to the specific style guide.",
+  "requestFramePermissions": []
+}
