@@ -20,7 +20,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center selection:bg-light-accent selection:text-white dark:selection:bg-dark-accent">
       <div className="w-full max-w-[640px] px-6 pt-6 pb-12 md:pt-12 md:pb-24 flex flex-col">
-        <div className="space-y-8 flex flex-col">
+        <div className="space-y-4 flex flex-col">
           <Header />
           
           <main className="space-y-24">

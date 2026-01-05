@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { OPSection } from './OPSection';
 
 export const Hero: React.FC = () => {
   return (
@@ -15,9 +16,9 @@ export const Hero: React.FC = () => {
 
       <div className="space-y-6">
         <div className="space-y-2">
-          <h1 className="text-[20px] font-semibold text-light-text dark:text-dark-text tracking-tight">
+          <h2 className="text-[16px] font-semibold text-light-text dark:text-dark-text tracking-tight">
             Click. Comment. Code.
-          </h1>
+          </h2>
           <div className="space-y-2 max-w-[520px]">
             <div className="flex items-start gap-3">
               <div className="flex-none w-6 h-6 rounded-full bg-light-surface dark:bg-dark-surface text-light-text dark:text-dark-text text-[12px] font-semibold flex items-center justify-center">
@@ -46,6 +47,8 @@ export const Hero: React.FC = () => {
           </div>
         </div>
       </div>
+
+      <OPSection />
     </section>
   );
 };
