@@ -4,7 +4,7 @@ import { OPSection } from './OPSection';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="space-y-8">
+    <section className="space-y-12">
       {/* Video Showcase Section */}
       <div className="relative aspect-video w-full rounded-lg bg-light-surface-alt dark:bg-dark-surface-alt border border-light-border dark:border-dark-border overflow-hidden group transition-all hover:border-light-accent/50 dark:hover:border-dark-accent/50">
           <img 
@@ -15,13 +15,12 @@ export const Hero: React.FC = () => {
       </div>
 
       <div className="space-y-2">
-        <h2 className="text-[16px] font-semibold text-light-text dark:text-dark-text tracking-tight">
-          Click. Comment. Code.
-        </h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-end">
           {/* Left Column */}
-          <div>
+          <div className="space-y-2">
+            <h2 className="text-[16px] font-semibold text-light-text dark:text-dark-text tracking-tight">
+              Click. Comment. Code.
+            </h2>
             <p className="text-[14px] text-light-text-secondary dark:text-dark-text-secondary leading-relaxed">
               Fixing UI issues one prompt at a time is slow. Batch annotate in your browser. Send everything to AI at once.
             </p>
