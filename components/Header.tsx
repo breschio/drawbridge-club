@@ -7,7 +7,7 @@ export const Header: React.FC = () => {
   const { starCount, isLoading } = useGithubStars();
 
   return (
-    <header className="flex items-center justify-between border-b border-light-border dark:border-dark-border pb-4">
+    <header className="flex items-center justify-between pb-4">
       <div className="flex items-end gap-2">
         <img
           src={drawbridgeIcon}

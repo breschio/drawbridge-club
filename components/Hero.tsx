@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { OPSection } from './OPSection';
 
 export const Hero: React.FC = () => {
   return (
@@ -13,12 +14,21 @@ export const Hero: React.FC = () => {
           />
       </div>
 
-      <div className="space-y-6">
-        <div className="space-y-2">
-          <h1 className="text-[20px] font-semibold text-light-text dark:text-dark-text tracking-tight">
-            Click. Comment. Code.
-          </h1>
-          <div className="space-y-2 max-w-[520px]">
+      <div className="space-y-2">
+        <h2 className="text-[16px] font-semibold text-light-text dark:text-dark-text tracking-tight">
+          Click. Comment. Code.
+        </h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Left Column */}
+          <div>
+            <p className="text-[14px] text-light-text-secondary dark:text-dark-text-secondary leading-relaxed">
+              Fixing UI issues one prompt at a time is slow. Batch annotate in your browser. Send everything to AI at once.
+            </p>
+          </div>
+          
+          {/* Right Column - Numbered List */}
+          <div className="space-y-2">
             <div className="flex items-start gap-3">
               <div className="flex-none w-6 h-6 rounded-full bg-light-surface dark:bg-dark-surface text-light-text dark:text-dark-text text-[12px] font-semibold flex items-center justify-center">
                 1
@@ -45,6 +55,10 @@ export const Hero: React.FC = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="hidden">
+        <OPSection />
       </div>
     </section>
   );
